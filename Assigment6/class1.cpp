@@ -1,5 +1,5 @@
 #include <iostream>
-#include <vector>
+#include "class1.h"
 
 class Class1 {
 public:
