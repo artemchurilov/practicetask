@@ -1,3 +1,7 @@
+/* Artem Churilov st130184@student.spbu.ru
+   6 task "Templates"
+*/
+
 #include <iostream>
 #include "class1.h"
 

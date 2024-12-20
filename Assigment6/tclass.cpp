@@ -5,7 +5,7 @@ template<typename T>
 class MyTemplateClass {
 public:
     MyTemplateClass(T newobj, int num, std::vector<float> vec) 
-        : obj(newobj), num(number), vec(vec) {}
+        : obj(newobj), number(num), vec(vec) {}
     bool foo() {
         return obj.bar(number, vec);
     }
