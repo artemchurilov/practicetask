@@ -7,47 +7,53 @@
 #include <vector>
 
 template<typename T>
-class MyTemplateClass {
+class MyTemplateClass
+{
 public:
-    MyTemplateClass(T obj, int num, std::vector<float> vec) 
+    MyTemplateClass(T obj, int num, std::vector<float> vec)
         : obj(obj), number(num), vec(vec) {}
-    bool foo() {
+    bool foo()
+    {
         return obj.bar(number, vec);
     }
 private:
     T obj;
-    int number; 
+    int number;
     std::vector<float> vec;
 };
 
 template<>
-class MyTemplateClass<int> {
+class MyTemplateClass<int>
+{
 public:
-    MyTemplateClass(int obj, int num, std::vector<float> vec) 
-    : obj(obj),number(num), vec(vec) {}
-    bool foo() {
+    MyTemplateClass(int obj, int num, std::vector<float> vec)
+        : obj(obj),number(num), vec(vec) {}
+    bool foo()
+    {
         return true;
     }
 
 private:
-  int obj;
-    int number; 
+    int obj;
+    int number;
     std::vector<float> vec;
 };
 
 template<>
-class MyTemplateClass<double> {
+class MyTemplateClass<double>
+{
 public:
-    MyTemplateClass(double obj, int num, std::vector<float> vec) 
-    : obj(obj),number(num), vec(vec) {}
+    MyTemplateClass(double obj, int num, std::vector<float> vec)
+        : obj(obj),number(num), vec(vec) {}
 
-    bool foo() {
+    bool foo()
+    {
         return false;
     }
 
 private:
-  double obj;
-    int number; 
+    double obj;
+    int number;
     std::vector<float> vec;
 };
 

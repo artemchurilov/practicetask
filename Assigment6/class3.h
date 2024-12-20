@@ -7,7 +7,8 @@
 #define CLASS3_H
 #include <vector>
 
-class Class3 {
+class Class3
+{
 public:
     bool bar(int number, std::vector<float>& vec);
 
