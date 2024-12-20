@@ -5,21 +5,20 @@
 #include <iostream>
 #include "class2.h"
 
-class Class2 {
-public:
-    bool bar(int number, std::vector<float>& vec) {
-         return !vec.empty();
-    }
 
-    int c_2_1() {
-        return 6; 
-        }
-
-    float c_2_2() {
-        return 20.12f;
-    }
-
-    void c_2_3() {
-        std::cout << "Class2: Artem Churilov"<<std::endl;
-    }
+bool Class2::bar(int number, std::vector<float>& vec) {
+  return !vec.empty();
 };
+
+int Class2::c_2_1() {
+  return 6; 
+};
+
+float Class2::c_2_2() {
+  return 20.12f;
+};
+
+void Class2::c_2_3() {
+  std::cout << "Class2: Artem Churilov"<<std::endl;
+};
+
