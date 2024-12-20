@@ -6,9 +6,9 @@
 st130184@student.spbu.ru
 ## Build
 
-<par>  </par>
-<par>  </par>
+<par> make </par>
+<par> make test-template </par>
 ## Run
 
-<par>  </par>
-<par>  </par>
+<par> ./template </par>
+<par> ./test-template </par>

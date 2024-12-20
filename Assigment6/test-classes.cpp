@@ -1,3 +1,6 @@
+/* Artem Churilov st130184@student.spbu.ru
+   6 task "Templates"
+*/
 #include <iostream>
 #include "class1.h"
 #include "class2.h"
@@ -60,9 +63,13 @@ TEST(Class3, WaitFalse)
 
 TEST(Special, Int)
 {
-    EXPECT_FALSE(false);
+  std::vector<float> nullV;
+  MyTemplateClass<int> e(42, 42, nullV);
+  EXPECT_TRUE(e.foo());
 }
 TEST(Special, Double)
 {
-    EXPECT_FALSE(false);
+  std::vector<float> nullV;
+  MyTemplateClass<double> e(42.42, 42, nullV);
+  EXPECT_FALSE(e.foo());
 }

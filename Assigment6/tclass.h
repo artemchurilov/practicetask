@@ -1,4 +1,9 @@
-#include <iostream>
+/* Artem Churilov st130184@student.spbu.ru
+   6 task "Templates"
+*/
+#ifndef TCLASS_H
+#define TCLASS_H
+
 #include <vector>
 
 template<typename T>
@@ -18,24 +23,32 @@ private:
 template<>
 class MyTemplateClass<int> {
 public:
-    MyTemplateClass(Class1 obj) : obj(obj) {}
+    MyTemplateClass(int obj, int num, std::vector<float> vec) 
+    : obj(obj),number(num), vec(vec) {}
     bool foo() {
         return true;
     }
 
 private:
-    Class1 obj; 
+  int obj;
+    int number; 
+    std::vector<float> vec;
 };
 
 template<>
 class MyTemplateClass<double> {
 public:
-    MyTemplateClass(Class1 obj) : obj(obj) {}
+    MyTemplateClass(double obj, int num, std::vector<float> vec) 
+    : obj(obj),number(num), vec(vec) {}
 
     bool foo() {
         return false;
     }
 
 private:
-    Class1 obj;
+  double obj;
+    int number; 
+    std::vector<float> vec;
 };
+
+#endif
